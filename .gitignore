@@ -1,4 +1,7 @@
 # maven ignore
+.mvn/
+mvnw
+mvnw.cd
 target/
 *.war
 *.ear
