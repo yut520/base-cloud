@@ -75,6 +75,7 @@
 
     <modules>
         <module>base-eureka</module>
+        <module>base-config</module>
     </modules>
 
     <repositories>
@@ -93,7 +94,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Greenwich.M3</version>
+                <version>${spring-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
