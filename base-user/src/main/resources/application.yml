@@ -1,0 +1,17 @@
+server:
+  port: 8030
+
+spring:
+  application:
+    name: base-user
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/base?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: rootroot
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
