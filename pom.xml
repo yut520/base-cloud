@@ -24,6 +24,7 @@
         <spring-boot.version>2.1.1.RELEASE</spring-boot.version>
         <spring-cloud.version>Greenwich.M3</spring-cloud.version>
         <sl4j.version>2.11.1</sl4j.version>
+        <mybatis.plus.version>3.0.4</mybatis.plus.version>
     </properties>
 
     <!--公共依赖-->
@@ -76,6 +77,8 @@
     <modules>
         <module>base-eureka</module>
         <module>base-config</module>
+        <module>base-user</module>
+        <module>base-oauth</module>
     </modules>
 
     <repositories>
@@ -97,6 +100,11 @@
                 <version>${spring-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis.plus.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
